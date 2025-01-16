@@ -19,13 +19,14 @@ export default {
 </script>
 
 <template>
-  <div class="w-full flex items-center justify-between">
-    <h3 class="font-bold text-[0.9rem] text-black">
+  <div class="w-full flex flex-col sm:flex-row sm:items-center sm:justify-between">
+    <h3 class="font-bold text-[0.9rem] text-black mb-1 sm:mb-0">
       {{ school }}
     </h3>
-    <span>{{ range }}</span>
+    <span class="text-sm">{{ range }}</span>
   </div>
-  <span class="text-xs">
-  {{ course }}
-</span>
+  <span class="text-xs mt-1 sm:mt-0">
+    {{ course }}
+  </span>
 </template>
+

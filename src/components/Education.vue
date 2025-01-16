@@ -34,15 +34,16 @@ export default {
 <template>
   <article class="mt-10">
     <h2 class="font-bold text-xl">Education</h2>
-    <div class="w-[44rem] text-sm text-slate-500 mt-3 space-y-3">
+    <div class="w-full sm:w-[44rem] text-sm text-slate-500 mt-3 space-y-3">
       <EducationSlot
-          v-for="item in education"
-          :key="item.school"
-          :school="item.school"
-          :course="item.course"
-          :range="item.range"
+        v-for="item in education"
+        :key="item.school"
+        :school="item.school"
+        :course="item.course"
+        :range="item.range"
       />
     </div>
   </article>
 
 </template>
+

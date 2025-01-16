@@ -18,13 +18,13 @@ export default {
 </script>
 
 <template>
-  <li class="link-card">
-    <a :href="href">
-      <h2>
+  <li class="link-card w-full sm:w-auto">
+    <a :href="href" class="block">
+      <h2 class="text-lg sm:text-xl">
         {{ title }}
         <span>&rarr;</span>
       </h2>
-      <p>
+      <p class="text-sm sm:text-base">
         {{ body }}
       </p>
     </a>
@@ -43,6 +43,7 @@ export default {
   background-position: 100%;
   transition: background-position 0.6s cubic-bezier(0.22, 1, 0.36, 1);
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+  max-width: 100%;
 }
 
 .link-card > a {
@@ -54,6 +55,8 @@ export default {
   color: white;
   background-color: #23262d;
   opacity: 0.8;
+  display: block;
+  width: 100%;
 }
 
 h2 {
@@ -75,4 +78,11 @@ p {
 .link-card:is(:hover, :focus-within) h2 {
   color: rgb(var(--accent-light));
 }
+
+@media (min-width: 640px) {
+  .link-card {
+    max-width: none;
+  }
+}
 </style>
+

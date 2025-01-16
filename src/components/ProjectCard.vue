@@ -1,11 +1,9 @@
 <script setup>
-
-const {description, tags, link, title} = defineProps(['link','title', 'description','tags'])
-
+const { description, tags, link, title } = defineProps(['link', 'title', 'description', 'tags'])
 </script>
 
 <template>
-  <div class="border border-slate-300 rounded p-2">
+  <div class="border border-slate-300 rounded p-2 w-full">
     <a :href="link" target="_blank">
       <h4 class="text-sm font-bold hover:underline">{{ title }}</h4>
     </a>
@@ -17,5 +15,5 @@ const {description, tags, link, title} = defineProps(['link','title', 'descripti
 </template>
 
 <style scoped>
-
 </style>
+
