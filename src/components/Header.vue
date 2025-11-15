@@ -1,7 +1,7 @@
 <script setup>
 import {BsGlobe} from 'vue-icons-plus/bs'
 import SocialLinks from "./SocialLinks.vue";
-import codeImage from '../images/code.jpg'
+import headerImage from '../images/portfolio-header-image.jpeg'
 </script>
 
 <template>
@@ -19,8 +19,8 @@ import codeImage from '../images/code.jpg'
       <SocialLinks />
     </div>
     <img
-      class="w-32 h-32 rounded-md mt-4 sm:mt-0"
-      :src="codeImage"
+      class="w-40 h-36 aspect-square rounded-md mt-4 sm:mt-0 object-cover"
+      :src="headerImage"
       alt="profile"
     />
   </div>
