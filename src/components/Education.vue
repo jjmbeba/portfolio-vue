@@ -11,8 +11,13 @@ export default {
     return {
       education: [
         {
+          school: "Techsavanna Software Institute",
+          course: "Advanced Software Engineering",
+          range: "2025-2025"
+        },
+        {
           school: "Moringa School",
-          course: "Software engineering",
+          course: "Software Engineering",
           range: "2023-2024",
         },
         {
